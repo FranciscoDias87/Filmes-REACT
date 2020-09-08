@@ -22,7 +22,6 @@ class Home extends Component {
         this.setState({ filmes: json });
         console.log(json);
       })
-
   }
 
   componentDidMount() {
@@ -38,7 +37,7 @@ class Home extends Component {
               <article key={filme.id}>
                 <strong >{filme.nome}</strong>
                 <img src={filme.foto} alt="Capa" />
-                <Link to='/'>Acessar</Link>
+                <Link to={`/filme/${filme.id}`} >Detalhes</Link>
               </article>
             );
           })}
