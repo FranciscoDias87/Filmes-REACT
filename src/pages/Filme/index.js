@@ -10,7 +10,6 @@ class Filme extends Component {
     this.state = {
       filme: []
     }
-
   }
 
   componentDidMount() {
